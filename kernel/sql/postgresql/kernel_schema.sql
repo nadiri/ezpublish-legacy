@@ -3196,7 +3196,15 @@ CREATE INDEX ezcontentobject_attribute_language_code ON ezcontentobject_attribut
 
 
 
-CREATE INDEX sort_key_int ON ezcontentobject_attribute USING btree (sort_key_int);
+CREATE INDEX ezcontentobject_classattr_id ON ezcontentobject_attribute USING btree (sort_key_int);
+
+
+
+
+
+
+
+CREATE INDEX sort_key_int ON ezcontentobject_attribute USING btree (contentclassattribute_id);
 
 
 
