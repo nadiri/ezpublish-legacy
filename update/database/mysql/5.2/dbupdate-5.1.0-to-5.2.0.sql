@@ -20,7 +20,8 @@ ALTER TABLE ezcontentobject_name
     MODIFY language_id BIGINT NOT NULL DEFAULT '0';
 
 ALTER TABLE ezcontentobject_attribute
-    MODIFY language_id BIGINT NOT NULL DEFAULT '0';
+    MODIFY language_id BIGINT NOT NULL DEFAULT '0',
+    ADD KEY ezcontentobject_classattr_id (contentclassattribute_id);
 
 ALTER TABLE ezcontentobject_version
     MODIFY initial_language_id BIGINT NOT NULL DEFAULT '0',
