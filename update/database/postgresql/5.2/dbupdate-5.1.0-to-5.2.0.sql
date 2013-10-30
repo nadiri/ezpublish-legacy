@@ -43,8 +43,6 @@ ALTER TABLE ezcobj_state_language
 ALTER TABLE ezurlalias_ml
     ALTER COLUMN lang_mask TYPE BIGINT;
 
-CREATE INDEX ezcontentobject_classattr_id ON ezcontentobject_attribute USING btree (contentclassattribute_id);
-
 -- Start ezp-21465 : Cleanup extra lines in the ezurl_object_link table
 DELETE
 FROM ezurl_object_link AS T1
